@@ -1,8 +1,17 @@
 <!DOCTYPE html>
 <script>
+  var audio;
+  var isPlaying = false;
+
   function playAudio() {
-    var audio = new Audio('https://github.com/MilenaGreulich/MilenaGreulich.github.io/raw/main/Standchen.mp3');
-    audio.play();
+    if (!isPlaying) {
+      audio = new Audio('https://example.com/audiofile.mp3');
+      audio.play();
+      isPlaying = true;
+    } else {
+      audio.pause();
+      isPlaying = false;
+    }
   }
 </script>
 <html>
