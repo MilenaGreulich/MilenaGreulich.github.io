@@ -5,7 +5,15 @@ body {
   align-items: center;
   height: 100vh; /* make the text always in center */
 }
-
+@media (max-width: 600px) {
+  h1 {
+    font-size: 3em; /* adjust font size for smaller screens */
+  }
+  button {
+    font-size: 14px; /* adjust button size for smaller screens */
+    padding: 8px 16px; /* adjust padding for smaller screens */
+  }
+}
 .center-text {
   text-align: center;
 }
@@ -67,4 +75,9 @@ button {
   border-radius: 5px;
   font-size: 18px;
   font-weight: bold;
+}
+button {
+  padding: 1em 2em; /* increase button size */
+  border-radius: 0.5em; /* increase button radius */
+  font-size: 1.5em; /* increase font size */
 }
